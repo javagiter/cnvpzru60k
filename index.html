@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>烈火92 - FC 空战</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div><strong>烈火92</strong> · FC 复古空战</div>
+      <div>分数：<span id="score">0</span></div>
+      <div>生命：<span id="lives">3</span></div>
+      <div>火力：<span id="power">1</span></div>
+      <div class="hint">移动：方向键 / WASD · 射击：J / 空格 · 终极技：K</div>
+    </div>
+    <canvas id="game" width="480" height="640"></canvas>
+
+    <div id="startOverlay" class="overlay visible">
+      <h1>烈火92</h1>
+      <p>198X FC 风格 · 弹幕强化 · 光效升级</p>
+      <button id="startBtn">开始战斗</button>
+    </div>
+
+    <div id="gameOver" class="overlay">
+      <h2>任务失败</h2>
+      <p>最终得分：<span id="finalScore">0</span></p>
+      <button id="retryBtn">重新出击</button>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
